@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp">
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/insideVideoView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/demo_2" />
+
+            <com.dream.myliu.liangwarehouse.view.TextureVideoView
+                android:id="@+id/textureview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <ImageView
+                android:id="@+id/playVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/biz_audio_sublist_item_img_icon" />
+
+
+            <ProgressBar
+                android:id="@+id/pb_waiting"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@null"
+                android:max="100"
+                android:progress="0"
+                android:layout_marginBottom="180dp"
+                android:progressDrawable="@mipmap/liangcang_logo_80" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:textColor="#222222" />
+
+        <TextView
+            android:id="@+id/videoContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:textColor="#aaaaaa"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_margin="7dp"
+            android:background="#aaaaaa"
+            android:padding="7dp">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/videoPlayTimeIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/biz_video_list_item_time_icon" />
+
+                <TextView
+                    android:id="@+id/videoPlayTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="20dp"
+                    android:text="02:52"
+                    android:textColor="#aaaaaa"
+                    android:textSize="8sp" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/videoPlayCountIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/biz_video_list_item_play_icon_small" />
+
+                <TextView
+                    android:id="@+id/videoPlayCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="20dp"
+                    android:text="11768"
+                    android:textColor="#aaaaaa"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/linear"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/videoContentsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/biz_video_list_item_tie"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="20dp"
+                    android:text="118"
+                    android:textColor="#aaaaaa"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/videoPlayShareIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/biz_video_list_item_play_icon_small" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

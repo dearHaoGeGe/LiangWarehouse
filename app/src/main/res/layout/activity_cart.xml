@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/backgroud"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/cartIv"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/liangcang_logo_80" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cartName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/textColorWrite"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cartPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </FrameLayout>
+        <include
+
+            layout="@layout/widet_num_add_sub" />
+
+        <Button
+            android:id="@+id/chooseBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="@string/choose_good"
+            android:layout_gravity="center"
+            android:textColor="@color/textColorWrite"
+            android:textSize="20sp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorWrite">#fefefe</color>
+    <color name="textColorGray">#6b6b6b</color>
+    <color name="textWrite">#f6f6f6</color>
+    <color name="backgroud">#292929</color>
+    <color name="text_light_blue">#A6DEDF</color>
+    <color name="text_deep_blue">#648DAF</color>
+    <color name="grey_btn_color_pressed">#ffd8d8d8</color>
+    <color name="grey_btn_color_disable">#7fd8d8d8</color>
+    <color name="red_btn_color_normal">#ffff5454</color>
+    <color name="red_btn_color_pressed">#ffd24242</color>
+    <color name="red_btn_color_disable">#7fff5454</color>
+    <color name="white_color_disable">#7fffffff</color>
+    <color name="crimson">#dc143c</color>
+    <color name="gainsboro">#dcdcdc</color>
+</resources>

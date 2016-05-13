@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- SearchView -->
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <!-- toolbar的文本的颜色-->
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!--
+    Background for the search query section (e.g. EditText)
+    <item name="queryBackground">...</item>
+    Background for the actions section (e.g. voice, submit)
+    <item name="submitBackground">...</item>
+    Close button icon
+    <item name="closeIcon">...</item>
+    Search button icon
+    <item name="searchIcon">...</item>
+    Go/commit button icon
+    <item name="goIcon">...</item>
+    Voice search button icon
+    <item name="voiceIcon">...</item>
+    Commit icon shown in the query suggestion row
+    <item name="commitIcon">...</item>
+    Layout for query suggestion rows
+    <item name="suggestionRowLayout">...</item>
+        -->
+
+    </style>
+
+
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_buttom_out</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <!-- 边框-->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="bigButton">
+        <item name="android:textSize">@dimen/bigButtonTextSize</item>
+        <item name="android:textColor">@drawable/white_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/largePadding</item>
+        <item name="android:paddingRight">@dimen/largePadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/normalButtonHeight</item>
+    </style>
+
+    <style name="bigRedButton" parent="@style/bigButton">
+        <item name="android:background">@drawable/bg_btn_style_red</item>
+    </style>
+
+
+    <style name="customCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox</item>
+    </style>
+
+
+</resources>

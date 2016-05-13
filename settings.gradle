@@ -1,0 +1,1 @@
+include ':app', ':greendao', ':library', ':NineOldAndroids-library', ':sharesdk'

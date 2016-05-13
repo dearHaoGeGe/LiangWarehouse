@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/icon0" android:duration="100" />
+    <item android:drawable="@drawable/icon1" android:duration="100" />
+    <item android:drawable="@drawable/icon2" android:duration="100" />
+    <item android:drawable="@drawable/icon3" android:duration="100" />
+    <item android:drawable="@drawable/icon4" android:duration="100" />
+    <item android:drawable="@drawable/icon5" android:duration="100" />
+    <item android:drawable="@drawable/icon6" android:duration="100" />
+    <item android:drawable="@drawable/icon7" android:duration="100" />
+    <item android:drawable="@drawable/icon8" android:duration="100" />
+    <item android:drawable="@drawable/icon9" android:duration="100" />
+    <item android:drawable="@drawable/icon10" android:duration="100" />
+    <item android:drawable="@drawable/icon11" android:duration="100" />
+    <item android:drawable="@drawable/icon12" android:duration="100" />
+    <item android:drawable="@drawable/icon13" android:duration="100" />
+    <!--<item android:drawable="@drawable/icon14" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon15" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon16" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon17" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon18" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon19" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon20" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon21" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon22" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon23" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon24" android:duration="100" />-->
+    <!--<item android:drawable="@drawable/icon25" android:duration="100" />-->
+</animation-list>

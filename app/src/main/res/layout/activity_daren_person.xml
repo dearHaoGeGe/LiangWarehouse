@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/dIHeaderIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/demo_people" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dDarenNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/sDarenProTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prefossal" />
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1.6">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/darenCon"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:text="关注"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/follow_btn_press"/>-->
+
+                <!--<Button-->
+                    <!--android:layout_marginLeft="3dp"-->
+                    <!--android:id="@+id/darenWrite"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/follow_btn_press"-->
+                    <!--android:text="私信" />-->
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/darenLikeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_like"
+            android:gravity="center"
+            android:text="@string/like" />
+
+        <TextView
+            android:id="@+id/darenRecommendTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recomment"
+            android:gravity="center"
+            android:text="@string/comment" />
+
+        <TextView
+            android:id="@+id/darenAttentionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_attention"
+            android:gravity="center"
+            android:text="@string/contantion" />
+
+        <TextView
+            android:id="@+id/darenFansTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/user_menu41"
+            android:gravity="center"
+            android:text="@string/fans" />
+    </LinearLayout>
+
+    <com.dream.myliu.liangwarehouse.view.NewGirdView
+        android:id="@+id/darenItGV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.dream.myliu.liangwarehouse.view.NewGirdView>
+
+</LinearLayout>

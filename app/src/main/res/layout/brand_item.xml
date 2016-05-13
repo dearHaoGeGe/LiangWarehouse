@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="brandItem"
+            type="com.dream.myliu.liangwarehouse.entity.BrandItem"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/sample_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/brandItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/iv"
+            android:layout_toRightOf="@+id/brandNetIv"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@{brandItem.name}"
+            android:textColor="@color/textColorGray" />
+<!--
+-->
+        <ImageView
+            android:id="@+id/brandNetIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:foregroundGravity="center_vertical"
+            android:background="@mipmap/demo_2"
+            android:src="@{brandItem.logo.url}" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:foregroundGravity="center_vertical"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/arrow_right" />
+    </RelativeLayout>
+</layout>

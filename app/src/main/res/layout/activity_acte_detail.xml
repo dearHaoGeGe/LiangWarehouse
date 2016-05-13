@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud">
+
+    <com.dream.myliu.liangwarehouse.view.CNiaoToolBar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/backgroud"
+        android:minHeight="?attr/actionBarSize"
+        app:rightButtonIcon="@mipmap/iconfont_fenxiang"
+        app:rightButtonText=""
+        app:title="@string/goods_details" />
+
+    <FrameLayout
+
+        android:id="@+id/goodsFL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/noGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/sold_out"
+            android:textColor="@color/textColorWrite"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/goodsLL"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/textColorGray"
+            android:gravity="center_vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/addCart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/add_cart"
+                android:textColor="@color/textColorWrite"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/buyGood"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:gravity="center"
+                android:text="@string/buy_directly"
+                android:textColor="@color/text_light_blue"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goodsRecy"
+        android:layout_below="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/goodsFL">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

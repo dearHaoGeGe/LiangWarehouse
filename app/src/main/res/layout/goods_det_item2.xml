@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/goodPrices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light_blue"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/goodsGod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/like_not_heart"
+            android:textColor="@color/textColorWrite"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goodOwnerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/textColorWrite"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/goodGoodsname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textColor="@color/textColorWrite"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp"
+        android:text="@string/good_des"
+        android:textColor="@color/textColorWrite"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/goodsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/product_des"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/goodsShape"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="尺寸"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:textColor="@color/textColorWrite"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/goodsShapeContent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="尺寸描述"-->
+    <!--android:textColor="@color/textColorWrite"-->
+    <!--android:textSize="12sp"-->
+    <!--android:paddingBottom="15dp"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:text="@string/res_commant"
+        android:textColor="@color/textColorWrite"
+        android:textSize="12sp"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/goodsRecommendHeaderIv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/demo_people" />
+
+        <TextView
+            android:id="@+id/goodsRecommendHeaderTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/house"
+            android:textColor="@color/textColorWrite"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/goodRecommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/textColorGray"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:text="@string/brand_res"
+        android:textColor="@color/textColorWrite"
+        android:textSize="12sp"
+        android:typeface="monospace" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/goodsBrandLogoIv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/demo_people" />
+
+        <TextView
+            android:id="@+id/goodsBrandInfoNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="@string/brand_name"
+
+            android:textColor="@color/textColorWrite"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/goodGuideTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/good_guide"
+        android:textColor="@color/textColorWrite" />
+
+    <TextView
+        android:id="@+id/goodGuideContTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/good_guide_res"
+        android:textColor="@color/textColorGray"
+        android:visibility="gone" />
+</LinearLayout>

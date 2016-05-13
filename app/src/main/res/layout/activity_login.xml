@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <SurfaceView
+        android:id="@+id/loginSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        />
+    <ImageView
+        android:id="@+id/loginIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_video_first_frame"
+        android:fitsSystemWindows="true"
+        />
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/thirdLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="59dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.dream.myliu.liangwarehouse.view.CircleImageView
+                android:id="@+id/qqLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:background="@mipmap/indicator_light"
+                android:src="@mipmap/icon_qq_login" />
+
+            <com.dream.myliu.liangwarehouse.view.CircleImageView
+                android:id="@+id/weChatLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/indicator_light"
+                android:src="@mipmap/icon_wechat_login" />
+
+            <com.dream.myliu.liangwarehouse.view.CircleImageView
+                android:id="@+id/sinaLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/indicator_light"
+                android:src="@mipmap/icon_sina_login" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mobEmaLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="59dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/otherLogin">
+            <TextView
+                android:id="@+id/mobileLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/img_radial_data_bg"
+                android:textColor="@color/textColorGray"
+                android:text="@string/tel_login" />
+
+            <TextView
+                android:id="@+id/emailLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/img_radial_data_bg"
+                android:textColor="@color/textColorGray"
+                android:layout_alignParentRight="true"
+                android:text="@string/email_login" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/otherLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="59dp"
+            android:layout_below="@+id/thirdLogin">
+
+            <ImageView
+
+                android:background="@color/textColorGray"
+                android:layout_width="80dp"
+                android:layout_marginTop="9dp"
+                android:layout_height="0.01dp"
+                android:alpha="255"/>
+            <TextView
+                android:text="@string/other_login"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:alpha="255"
+                android:textColor="@color/textColorGray"
+                android:paddingLeft="16dp"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:background="@color/textColorGray"
+                android:layout_marginTop="9dp"
+                android:layout_width="80dp"
+                android:layout_height="0.01dp"
+                android:alpha="255"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
